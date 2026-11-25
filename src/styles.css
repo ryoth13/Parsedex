@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-custom-gradient text-foreground min-h-screen scroll-container;
+  }
+}
+
+.scroll-container {
+  width: 100%;
+  /* 设置容器宽度 */
+  overflow: auto;
+  /* 显示滚动条，根据内容决定是否显示 */
+
+  /* 隐藏默认的滚动条样式 */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
+@layer components {
+  table {
+    table-layout: fixed;
+    border-collapse: separate;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  th,
+  td {
+    word-wrap: break-word;
+    max-width: 200px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  thead th {
+    background-color: #55608f;
+  }
+
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+
+  tbody td {
+    position: relative;
+  }
+
+  tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 0;
+  }
+
+  .black-row {
+    background-color: rgba(29, 32, 34, 0.24);
+  }
+
+}

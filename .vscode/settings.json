@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "css.validate": false,
+    "tailwindCSS.includeLanguages":
+        {
+    "plaintext": "html"
+    }
+}
