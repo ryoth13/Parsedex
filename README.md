@@ -14,19 +14,19 @@ Parsedex 是一款基于 Tauri、Vue 和 Vite 构建的协议报文解析工具�
 
 ### 主界面
 
- ![image-20261125224439053](public\img\readme01.png)
+ ![image-20261125224439053](public/img/readme01.png)
 
 ### 协议识别
 
 在搜索框中输入报文并执行搜索。匹配成功后，可选择查看协议文档或进入解析页面。识别范围取决于当前已接入的协议规则。
 
-![image-20261125224720272](public\img\readme02.png) 
+![image-20261125224720272](public/img/readme02.png)
 
 ### 报文解析
 
 进入解析页面后，工具加载对应的解析脚本，将报文分解为字段并展示其含义。修改输入后，可再次点击“解析”查看结果。
 
- ![image-20261125224838907](public\img\readme03.png)
+ ![image-20261125224838907](public/img/readme03.png)
 
 ## 快速体验
 
