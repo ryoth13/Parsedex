@@ -132,7 +132,7 @@ onMounted(async () => {
 <template>
   <Sidebar />
   <div class="inform" ref="informDiv">
-    All-in-One
+    Parsedex
   </div>
 
   <div id="cover" ref="coverDiv">
